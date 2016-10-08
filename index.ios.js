@@ -3,4 +3,4 @@ import { AppRegistry } from 'react-native';
 
 import App from './src/App'
 
-AppRegistry.registerComponent('Fretamento', () => App);
+AppRegistry.registerComponent('Bus', () => App);

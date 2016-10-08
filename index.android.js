@@ -50,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Fretamento', () => Fretamento);
+AppRegistry.registerComponent('Bus', () => Fretamento);
