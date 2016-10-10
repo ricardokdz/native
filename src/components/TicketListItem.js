@@ -15,10 +15,11 @@ export class TicketListItem extends Component {
   render() {
     return (
 			<View>
-	      <Text>{this.props.title}</Text>
-				<Text>{this.props.number}</Text>
+	      <Text style={{fontSize: 24, color: '#527fe4', fontFamily: 'Helvetica'}}>{this.props.company}</Text>
+        <Text>{this.props.date} - {this.props.hour}</Text>
+				<Text>{this.props.status}</Text>
 				<TouchableHighlight onPress={this._onPressButton}>
-					<Text>Ver</Text>
+					<Text>Ver ticket</Text>
 				</TouchableHighlight>
 			</View>
     );
