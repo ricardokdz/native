@@ -1,0 +1,1 @@
+module.exports = require('react-native').StyleSheet.create({"nav":{"backgroundColor":"#5193CF"},"tab":{"backgroundColor":"#F9F9F9"}});

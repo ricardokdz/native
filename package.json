@@ -3,15 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start && npm run style",
+		"style": "react-native-css -i styles.css -o src/style.js --watch"
   },
   "dependencies": {
     "react": "15.3.2",
     "react-native": "0.33.0",
     "react-native-carousel": "^0.10.0",
+    "react-native-credit-card-input": "^0.2.5",
     "react-native-facebook-login": "^1.4.0",
-    "react-native-maps": "^0.10.0",
+    "react-native-maps": "^0.10.1",
     "react-native-navbar": "^1.5.4",
+    "react-native-qrcode": "^0.2.2",
+    "react-native-router-flux": "^3.36.0",
     "react-native-side-menu": "^0.20.1"
   }
 }

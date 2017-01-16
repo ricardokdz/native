@@ -6,10 +6,12 @@ import {
 	StyleSheet
 } from 'react-native'
 
+import {Actions} from 'react-native-router-flux'
+
 export class TicketListItem extends Component {
 	
 	_onPressButton(){
-		// redirect to ticket
+		Actions.ticket_view({id: 20})
 	}
 	
   render() {

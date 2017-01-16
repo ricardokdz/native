@@ -2,38 +2,32 @@ import React, {Component} from 'react'
 import {
   Dimensions,
   StyleSheet,
-  ScrollView,
   View,
   Image,
   Text,
 } from 'react-native'
+import {Actions} from 'react-native-router-flux'
 
 const window = Dimensions.get('window');
-const uri = 'https://pickaface.net/gallery/avatar/Opi51c74d0125fd4.png';
+const uri = 'https://e-nautia.com/avatars/thesimpsons/Homer_Simpson_Sideart_Homebrew_s.jpg';
 
 export class Menu extends Component {
   render() {
     return (
-      <ScrollView scrollsToTop={false} style={styles.menu}>
-        <View style={styles.avatarContainer}>
-          <Image
-            style={styles.avatar}
-            source={{ uri, }}/>
-          <Text style={styles.name}>Your name</Text>
-        </View>
+			<View style={styles.menu}>
+	      <View style={styles.avatarContainer}>
+	        <Image
+	          style={styles.avatar}
+	          source={{ uri, }}/>
+	        <Text style={styles.name}>Ricardo Pedrosa</Text>
+	      </View>
 
-        <Text
-          onPress={() => this.props.onItemSelected('About')}
-          style={styles.item}>
-          About
-        </Text>
-
-        <Text
-          onPress={() => this.props.onItemSelected('Contacts')}
-          style={styles.item}>
-          Contacts
-        </Text>
-      </ScrollView>
+	      <Text
+	        onPress={() => Actions.payment_home({test: 1})}
+	        style={styles.item}>
+	        Contacts
+	      </Text>
+			</View>
     )
   }
 }
@@ -44,7 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: window.width,
     height: window.height,
-    backgroundColor: 'gray',
+    backgroundColor: '#293944',
     padding: 20,
   },
   avatarContainer: {
